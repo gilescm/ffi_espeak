@@ -1,0 +1,10 @@
+output: 'lib/ffi/espeak_generated_bindings.dart'
+name: 'espeak'
+description: 'Holds bindings to espeak.'
+headers:
+  entry-points:
+    - 'native/espeak-ng-master/src/include/espeak/speak_lib.h'
+compiler-opts:
+  - '-Wno-nullability-completeness'
+  - '-Isrc2/include/'
+comments: false
